@@ -101,7 +101,7 @@ class VolumeBackupsTest(utils.TestCase):
             expected_body)
         self._assert_request_id(del_back)
 
-    def test_force_delete_with_false_force_param_vaule(self):
+    def test_force_delete_with_false_force_param_value(self):
         """To delete backup with force parameter set to False"""
         b = cs.backups.list()[0]
         del_back = b.delete(force=False)
