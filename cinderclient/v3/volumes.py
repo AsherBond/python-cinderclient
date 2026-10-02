@@ -314,7 +314,7 @@ class VolumeManager(volumes_base.VolumeManager):
         """Complete extending an attached volume.
 
         :param volume: The UUID of the extended volume
-        :param error: Used to indicate if an error has occured that requires
+        :param error: Used to indicate if an error has occurred that requires
                       Cinder to roll back the extend operation.
         """
         return self._action('os-extend_volume_completion',
